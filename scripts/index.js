@@ -1,6 +1,6 @@
 const baseURL = 'https://platzi-avo.vercel.app';
 const URL = "https://platzi-avo.vercel.app/api/avo";
-const mountNode = document.querySelector('.main');
+const mountNode = document.querySelector('.container');
 
 //--------------Fetch utilizando then y catch----------------------------
 // try{
@@ -32,7 +32,7 @@ async function getDataFromAPI(){
 
             image.src = `${baseURL}${element.image}`;
             title.textContent = element.name;
-            price.textContent = element.price;
+            price.textContent = formatPrice(element.price);
             container.className = "card-container";
 
             container.append(image, title, price);
@@ -47,3 +47,12 @@ getDataFromAPI()
 .catch(e => {
   console.log('There has been a problem with your fetch operation: ' + e.message);
 });
+
+function formatPrice(price){
+    const newPrice = new window.Intl.NumberFormat("en-EN", {
+        style: "currency",
+        currency: "USD"
+    }).format(price);
+
+    return newPrice;
+}

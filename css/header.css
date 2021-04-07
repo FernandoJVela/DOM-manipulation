@@ -38,3 +38,12 @@ nav{
     letter-spacing: 0.1rem;
     margin: 0 5px;
 }
+
+@media(min-width: 700px){
+    nav{
+        height: 100px;
+    }
+    .nav-home p, .nav-basket p{
+        font-size: 1.2rem;
+    }
+}
