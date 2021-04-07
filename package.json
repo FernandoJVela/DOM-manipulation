@@ -1,0 +1,24 @@
+{
+  "name": "dom-platzi",
+  "version": "1.0.0",
+  "description": "This project uses an API to change content dinamically",
+  "main": "./scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/FernandoJVela/DOM-manipulation.git"
+  },
+  "keywords": [
+    "dom",
+    "api",
+    "javascript"
+  ],
+  "author": "Fernando Vela [fer.velav@gmail.com]",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FernandoJVela/DOM-manipulation/issues"
+  },
+  "homepage": "https://github.com/FernandoJVela/DOM-manipulation#readme"
+}
