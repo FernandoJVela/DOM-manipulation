@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>My Weather Report</title>
+</head>
+<body>
+    <main class="main">
+        <section class="container">
+            <div class="title">
+                <h1>Weather notification</h1>
+            </div>
+            <div class="search-bar">
+                <form>
+                    <select name = "dropdown" class="search-bar__dropdown">
+                       <option value = "Bogota">Bogota</option>
+                       <option value = "Medellin">Medellin</option>
+                       <option value = "Cali">Cali</option>
+                       <option value = "New York">New York</option>
+                       <option value = "Lima">Lima</option>
+                       <option value = "Quito">Quito</option>
+                       <option value = "San Francisco">San Francisco</option>
+                       <option value = "Los Angeles">Los Angeles</option>
+                       <option value = "Buenos Aires">Buenos Aires</option>
+                       <option value = "London">London</option>
+                       <option value = "Berlin">Berlin</option>
+                       <option value = "Tokyo">Tokyo</option>
+                    </select>
+                 </form>
+                 <button class="search-bar__button">Search</button>
+            </div>
+            <div class="city-temp"></div>
+            <div class="other-info">
+                <div class="icon">
+                    <img src="./assets/icons/cloudy.svg" alt="Cloudy">
+                </div>
+                <div class="weather-date-time"></div>
+            </div>
+            <div class="description"></div>
+        </section>
+    </main>
+    <script src="./scripts/Weather.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
+</body>
+</html>

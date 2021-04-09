@@ -1,0 +1,99 @@
+:root{
+    --soft-main: #ECCAE9;
+    --dark-main: #454655;
+    --call2action: #8EA4FF;
+    --secondary: #6E73A7;
+    --soft-white: #DDFEEF;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 62.5%;
+    font-family: 'Work Sans', sans-serif;
+    height: 100vh;
+    background-image: url('../assets/imgs/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% * (9/10));
+    max-width: 350px;
+    height: 430px;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #eccae9, #c5a4c3, #a0809d, #7b5e7a, #593d58);
+    border-radius: 30px;
+    box-shadow: 2px 4px 6px 2px rgba(24, 32, 43, 0.4);
+}
+.title h1{
+    font-size: 1.6rem;
+    color: var(--soft-white);
+    letter-spacing: 1px;
+    margin: 0 10px;
+}
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.search-bar__dropdown{
+    margin-right: 10px;
+    padding: 5px;
+    background-color: var(--soft-main);
+    border: solid 1px var(--dark-main);
+    border-radius: 7px;
+    color: var(--dark-main);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
+.search-bar__button{
+    padding: 5px;
+    background-color: var(--dark-main);
+    color: var(--soft-main);
+    border: none;
+    border-radius: 7px;
+}
+.other-info .icon img{
+    margin-right: 10px;
+    height: 100px;
+}
+.city-temp{
+    width: 100%;
+    text-align: right;
+    padding-right: 50px;
+}
+.city-temp h2{
+    font-size: 1.4rem;
+    color: var(--soft-white);
+    padding: 10px 5px;
+}
+.city-temp p{
+    font-size: 1rem;
+    color: var(--soft-white);
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+.other-info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.other-info h2{
+    font-size: 0.9rem;
+    color: var(--soft-white);
+    padding: 5px 5px;
+}
+.other-info p{
+    font-size: 0.9rem;
+    color: var(--soft-white);
+    padding: 5px 0;
+}
